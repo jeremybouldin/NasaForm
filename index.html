@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Special+Elite&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header>
+            <img src="NASA.png" />
+        </header>
+        <main>
+            <!-- form here! -->
+            <!-- 
+Challenge:
+1. Add inputs for the email and password
+   fields. Remember to add all necessary
+   properties.
+2. Give the inputs labels and make it so
+   that clicking on the label brings the 
+   corresponding input into focus.    
+ -->
+            <form id="login-form">
+                <label for="astronautName">Astronaut Name 👩‍🚀</label>
+                <input
+                    type="text"
+                    id="astronautName"
+                    name="astronautName"
+                    placeholder="Neil Armstrong"
+                    required
+                />
+                <label for="astronautEmail">Astronaut Email</label>
+                <input
+                    type="email"
+                    name="astronautEmail"
+                    id="astronautEmail"
+                    placeholder="n.armstrong@nasa.com"
+                    required
+                />
+                <label for="astronautPassword">Astronaut Password</label>
+                <input
+                    type="password"
+                    name="astronautPassword"
+                    id="astronautPassword"
+                    placeholder="******"
+                    required
+                />
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
